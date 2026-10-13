@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+/* @import "tailwindcss";
+
+
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+} */
+
+/* ========Utility Classes========== */
+.card-window{
+  width: 100%;
+
+}
+
+
+#window {
+  display: flex;
+  border: 1px solid white;
+  height: 100vh;
+  overflow-x: hidden;
+  transition: all 1s ease;
+
+}
+
+.logobox { display: flex; align-items: center; justify-content: space-around;  padding: 10px;}
+.logobox h1{ font-size: 1.5rem; }
+.sidebar {
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: whitesmoke;
+  
+}
+
+.sidebar > .group-1{ padding: 10px;  }
+
+.side-nav{
+  margin-top: 30px;
+  
+  display: flex;
+  flex-direction: column;
+  
+  padding: 0 30px;
+  gap: 20px;
+}
+.side-nav a{
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  display: flex;
+  text-align: center;
+  gap: 10px;
+  align-items: center;
+  transition: all 0.3s ease;
+  &:active{
+    scale: 0.98;
+  }
+}
+
+
+
+.logoutbox{
+  background:black; color: white; display:flex; justify-content:space-between; align-items: center;
+}
+.logoutbox button{
+  background: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 22px;
+  &:hover{
+    background: red;
+    color: white;
+  }
+}
+
+.rightbar{
+  padding: 30px 40px;
+  
+  width: 80vw;
+}
+
+.menuButton{
+  &:hover{
+    background-color: white;
+    cursor: pointer;
+    scale: 1.1;
+  }
+}
+
+@media screen and (max-width : 768) {
+  .sidebar h1{
+    font-size: 1rem;
+  }
+  .sidebar{
+    width: 70vw;
+  }
+  .sidebar a{
+    font-size: 1rem;
+    gap: 10px;
+  }
+  .side-nav{
+    gap: 10px;
+  }
+}
+
